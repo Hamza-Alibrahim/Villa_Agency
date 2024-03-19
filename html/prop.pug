@@ -1,0 +1,215 @@
+extends index.pug
+block mainData
+  .main-header
+    .container
+      .logo VILLA
+      block links
+        ul.links
+          li
+            a(href="index.html") Home
+          li.active
+            a(href="prop.html") Properties
+          li
+            a(href="details.html") Property Details
+          li
+            a(href="cont.html") Contact Us
+          li.visit
+            a(href="#")
+              <i class="fa fa-calendar"></i> 
+              span Schedule a visit
+      .miniLinks
+        span
+  .page-img 
+    h4 HOME / PROPERTIES
+    h2 PROPERTIES
+  block page-data
+    .prop-options
+      .container
+        ul.buttons
+          li.active(data-type="all") Show All
+          li(data-type="apartment") Apartment
+          li(data-type="villa") Villa House
+          li(data-type="penthouse") Penthouse
+        .cards
+          div(class="card apartment")
+            img(src="../imgs/property-01.jpg")
+            .det 
+              .type Luxury Villa
+              .price $2.264.000
+            a.loc(href="prop.html") 18 New Street Miami, OR 97219
+            ul.speci
+              li Bedrooms: 
+                span 8
+              li Bathrooms: 
+                span 8
+              li Area: 
+                span 545m2
+              li Floor: 
+                span 3
+              li Parking: 
+                span 6 spots
+            button.sched 
+              a(href="./details.html") Schedule a visit
+          div(class="card villa")
+            img(src="../imgs/property-02.jpg")
+            .det 
+              .type Luxury Villa
+              .price $1.180.000
+            a.loc(href="prop.html") 54 Mid Street Florida, OR 27001
+            ul.speci
+              li Bedrooms: 
+                span 6
+              li Bathrooms: 
+                span 5
+              li Area: 
+                span 450m2
+              li Floor: 
+                span 3
+              li Parking: 
+                span 8 spots
+            button.sched 
+              a(href="./details.html") Schedule a visit
+          div(class="card apartment penthouse")
+            img(src="../imgs/property-03.jpg")
+            .det 
+              .type Luxury Villa
+              .price $1.460.000
+            a.loc(href="prop.html") 26 Old Street Miami, OR 38540
+            ul.speci
+              li Bedrooms: 
+                span 5
+              li Bathrooms: 
+                span 4
+              li Area: 
+                span 225m2
+              li Floor: 
+                span 3
+              li Parking: 
+                span 10 spots
+            button.sched 
+              a(href="./details.html") Schedule a visit
+          div(class="card villa")
+            img(src="../imgs/property-04.jpg")
+            .det 
+              .type Apartment
+              .price $584.500
+            a.loc(href="prop.html") 12 New Street Miami, OR 12650
+            ul.speci
+              li Bedrooms: 
+                span 4
+              li Bathrooms: 
+                span 3
+              li Area: 
+                span 125m2
+              li Floor: 
+                span 25th
+              li Parking: 
+                span 2 cars
+            button.sched 
+              a(href="./details.html") Schedule a visit
+          div(class="card villa penthouse")
+            img(src="../imgs/property-05.jpg")
+            .det 
+              .type Penthouse
+              .price $925.600
+            a.loc(href="prop.html") 34 Beach Street Miami, OR 42680
+            ul.speci
+              li Bedrooms: 
+                span 4
+              li Bathrooms: 
+                span 4
+              li Area: 
+                span 180m2
+              li Floor: 
+                span 38th
+              li Parking: 
+                span 2 cars
+            button.sched 
+              a(href="./details.html") Schedule a visit
+          div(class="card apartment penthouse")
+            img(src="../imgs/property-06.jpg")
+            .det 
+              .type Modern Condo
+              .price $450.000
+            a.loc(href="prop.html") 22 New Street Portland, OR 16540
+            ul.speci
+              li Bedrooms: 
+                span 3
+              li Bathrooms: 
+                span 2
+              li Area: 
+                span 165m2
+              li Floor: 
+                span 26th
+              li Parking: 
+                span 3 cars
+            button.sched 
+              a(href="./details.html") Schedule a visit
+          div(class="card villa penthouse")
+            img(src="../imgs/property-03.jpg")
+            .det 
+              .type Luxury Villa
+              .price $$980.000
+            a.loc(href="prop.html") 14 Mid Street Miami, OR 36450
+            ul.speci
+              li Bedrooms: 
+                span 8
+              li Bathrooms: 
+                span 8
+              li Area: 
+                span 550m2
+              li Floor: 
+                span 3
+              li Parking: 
+                span 12 spots
+            button.sched 
+              a(href="./details.html") Schedule a visit
+          div(class="card apartment penthouse")
+            img(src="../imgs/property-02.jpg")
+            .det 
+              .type Luxury Villa
+              .price $1.520.000
+            a.loc(href="prop.html") 26 Old Street Miami, OR 12870
+            ul.speci
+              li Bedrooms: 
+                span 12
+              li Bathrooms: 
+                span 15
+              li Area: 
+                span 380m2
+              li Floor: 
+                span 3
+              li Parking: 
+                span 14 spots
+            button.sched 
+              a(href="./details.html") Schedule a visit
+          div(class="card apartment penthouse")
+            img(src="../imgs/property-01.jpg")
+            .det 
+              .type Luxury Villa
+              .price $3.145.000
+            a.loc(href="prop.html") 34 New Street Miami, OR 24650
+            ul.speci
+              li Bedrooms: 
+                span 10
+              li Bathrooms: 
+                span 12
+              li Area: 
+                span 860m2
+              li Floor: 
+                span 3
+              li Parking: 
+                span 10 spots
+            button.sched 
+              a(href="./details.html") Schedule a visit
+        .pages
+          span
+            a(href="#") 1
+          span.active 
+            a(href="#") 2
+          span
+            a(href="#") 3
+          span
+            a(href="#") >>
+block footerData
+  div(class="footer center") Copyright © 2048 Villa Agency Co., Ltd. All rights reserved. Design: TemplateMo

@@ -1,0 +1,41 @@
+@mixin flex-j($j) {
+    display: flex;
+    justify-content: $j;
+}
+
+@mixin flex-a($a) {
+    display: flex;
+    align-items: $a;
+}
+
+@mixin flex($j) {
+    display: flex;
+    align-items: center;
+    justify-content: $j;
+}
+
+@mixin flex-a-j($a, $j) {
+    display: flex;
+    align-items: $a;
+    justify-content: $j;
+}
+
+@mixin circle($b, $w) {
+    width: $w;
+    height: $w;
+    border-radius: 50%;
+    background-color: $b;
+    margin: 5px;
+}
+
+@mixin circle-d($b, $w) {
+    width: $w;
+    height: $w;
+    border-radius: 50%;
+    background-color: $b;
+    margin: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
